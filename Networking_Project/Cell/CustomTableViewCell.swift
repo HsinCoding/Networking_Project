@@ -11,12 +11,12 @@ import UIKit
 class CustomTableViewCell: UITableViewCell {
 
     
-    @IBOutlet weak var location: UILabel!
-    @IBOutlet weak var parameterOne: UILabel!
-    @IBOutlet weak var unitOne: UILabel!
-    @IBOutlet weak var parameterTwo: UILabel!
-    @IBOutlet weak var unitTwo: UILabel!
-    @IBOutlet weak var basicDescription: UILabel!
+    @IBOutlet weak var locationName: UILabel!
+    @IBOutlet weak var parameterName2: UILabel!
+    @IBOutlet weak var parameterUnit2: UILabel!
+    @IBOutlet weak var parameterName3: UILabel!
+    @IBOutlet weak var parameterUnit3: UILabel!
+    @IBOutlet weak var parameterName1: UILabel!
     @IBOutlet weak var startTime: UILabel!
     @IBOutlet weak var endTime: UILabel!
     

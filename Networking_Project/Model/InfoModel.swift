@@ -19,9 +19,9 @@ struct Result: Codable {
 }
 
 struct Results:Codable {
-    let parameterName2: String
+    let parameterName2: String 
     let parameterUnit2: String
-    let parameterName1: String
+    let parameterName1: String // description
     let parameterUnit3: String
     let parameterName3, parameterValue1, locationName: String
     let endTime, startTime: String

@@ -10,8 +10,10 @@ import UIKit
 import Alamofire
 import SwiftyJSON
 
-class ViewController: UIViewController, UITableViewDataSource, WeatherDetailsPresenterDelegate  {
+class ViewController: UIViewController, UITableViewDataSource, UICollectionViewDataSource, WeatherDetailsPresenterDelegate  {
    
+    
+    @IBOutlet weak var collectionView: UICollectionView!
 
     @IBOutlet weak var tableView: UITableView!
     var itemsArray:[Results] = []
@@ -20,14 +22,14 @@ class ViewController: UIViewController, UITableViewDataSource, WeatherDetailsPre
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        print("test")
+        print("testhi")
         weatherPresenter.delegate = self
         weatherPresenter.FetchWeatherDetail()
         registerCell() 
         
     }
     
-    // MARK: - UITableViewDataSource
+    // MARK: - registerCell
     func registerCell() {
         tableView.register(UINib(nibName: "CustomTableViewCell", bundle: nil), forCellReuseIdentifier: "Cell")
     }
@@ -43,10 +45,30 @@ class ViewController: UIViewController, UITableViewDataSource, WeatherDetailsPre
         
         let cell = tableView.dequeueReusableCell(withIdentifier: "Cell", for: indexPath) as! CustomTableViewCell
         let item = itemsArray[indexPath.row]
-        cell.location.text = item.locationName
+        cell.locationName.text = item.locationName
+        cell.parameterName1.text = item.parameterName1
+        cell.parameterName2.text = item.parameterName2
+        cell.parameterUnit2.text = item.parameterUnit2
+        cell.parameterName3.text = item.parameterName3
+        cell.parameterUnit3.text = item.parameterUnit3
         
         return cell
     }
+    
+    // MARK: - UICollectionViewDataSource
+    
+    
+    
+    func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
+        return 1
+    }
+    
+    func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
+        let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "RegionCell", for: indexPath)
+        cell.backgroundColor = UIColor.blue
+        return cell
+    }
+
     
 
     // MARK: - WeatherDetailsPresenterDelegate

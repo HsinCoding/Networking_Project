@@ -22,7 +22,7 @@ class WeatherDetailsPresenter: NSObject {
         let url = "http://data.taipei/opendata/datalist/apiAccess?scope=resourceAquire&rid=e6831708-02b4-4ef8-98fa-4b4ce53459d9"
         
         let realUrl = URL(string: url)
-        URLSession.shared.dataTask(with: realUrl!) { (data, res, error) in
+        URLSession.shared.dataTask(with: realUrl!) { (data, response, error) in
             if error != nil {
                 
             } else {
@@ -40,8 +40,4 @@ class WeatherDetailsPresenter: NSObject {
             }
             }.resume()
     }
-    
-   
-
-    
 }

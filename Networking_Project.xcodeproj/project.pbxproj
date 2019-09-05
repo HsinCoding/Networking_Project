@@ -21,6 +21,7 @@
 		CE50693B231E519200DA5020 /* CustomTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE506939231E519200DA5020 /* CustomTableViewCell.swift */; };
 		CE50693C231E519200DA5020 /* CustomTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = CE50693A231E519200DA5020 /* CustomTableViewCell.xib */; };
 		CE506940231F8E3000DA5020 /* WeatherDetailsPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE50693F231F8E3000DA5020 /* WeatherDetailsPresenter.swift */; };
+		CE5069842321093D00DA5020 /* ExtensionTool.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE5069832321093D00DA5020 /* ExtensionTool.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -68,6 +69,7 @@
 		CE50693A231E519200DA5020 /* CustomTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CustomTableViewCell.xib; sourceTree = "<group>"; };
 		CE50693F231F8E3000DA5020 /* WeatherDetailsPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherDetailsPresenter.swift; sourceTree = "<group>"; };
 		CE506943231F973600DA5020 /* PrefixHeader.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PrefixHeader.pch; sourceTree = "<group>"; };
+		CE5069832321093D00DA5020 /* ExtensionTool.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExtensionTool.swift; sourceTree = "<group>"; };
 		ED4F077C59959A0D059FF4ED /* Pods_Networking_ProjectUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Networking_ProjectUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		F1D7EBCDD200C46AF16AD216 /* Pods-Networking_ProjectTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Networking_ProjectTests.debug.xcconfig"; path = "Target Support Files/Pods-Networking_ProjectTests/Pods-Networking_ProjectTests.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -211,6 +213,7 @@
 			isa = PBXGroup;
 			children = (
 				CE506943231F973600DA5020 /* PrefixHeader.pch */,
+				CE5069832321093D00DA5020 /* ExtensionTool.swift */,
 			);
 			path = Resource;
 			sourceTree = "<group>";
@@ -450,6 +453,7 @@
 				CE506904231CA7FD00DA5020 /* AppDelegate.swift in Sources */,
 				CE50693B231E519200DA5020 /* CustomTableViewCell.swift in Sources */,
 				CE506936231CFF7900DA5020 /* InfoModel.swift in Sources */,
+				CE5069842321093D00DA5020 /* ExtensionTool.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
